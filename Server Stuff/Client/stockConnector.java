@@ -7,9 +7,9 @@ public class stockConnector {
 		
 		int port = 5000;
 		try {
-			System.out.println("Connecting to " + "10.5.34.148" + " on port " + port);
+			System.out.println("Connecting to " + "127.0.0.1" + " on port " + port);
 			
-			Socket clientSocket = new Socket("10.5.34.148", port);
+			Socket clientSocket = new Socket("127.0.0.1", port);
 			
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 						

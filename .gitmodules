@@ -1,0 +1,3 @@
+[submodule "STS"]
+	path = STS
+	url = https://github.com/minichris/STS

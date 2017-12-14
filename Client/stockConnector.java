@@ -3,6 +3,19 @@ import java.io.*;
 import java.io.PrintWriter;
 
 public class stockConnector {
+	private static stockConnector instance = null; // Singleton lives here
+	
+	protected stockConnector() {
+      // Exists only to defeat instantiation to allow for a singleton.
+	}
+	
+	public static stockConnector getInstance() { // Get the singleton
+      if(instance == null) {
+         instance = new stockConnector();
+      }
+      return instance;
+	}
+	
 	public static void main(String[] args){
 		/*
 		Information for future developers
